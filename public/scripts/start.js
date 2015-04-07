@@ -12,7 +12,7 @@ var CommentForm = React.createClass({
       <div>
         <i18n key={firstName}/>
         <form className="commentForm" onSubmit={this.handleSubmit}>
-          <input type="text" placeholder="sd" ref="author"/>
+          <input type="text" placeholder="<i18n key={firstName}/>" ref="author"/>
           <input type="text" placeholder="Comment text..." ref="text"/>
           <input type="submit" value="Post"/>
         </form>
