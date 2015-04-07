@@ -1,3 +1,11 @@
+# First task move "acc-user-name.dust" and "acc-user-name.js" to react
+
+1) how resolve {?firstName}1 {:else}2 {/firstName} ?
+2) how resolve i18n ?
+3) how resolve if condition ?
+
+## GOOD LUCK!!
+
 # React Tutorial
 
 This is the React comment box example from [the React tutorial](http://facebook.github.io/react/docs/tutorial.html).
