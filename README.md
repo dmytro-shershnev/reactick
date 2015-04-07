@@ -45,11 +45,6 @@ python server.py
 ruby server.rb
 ```
 
-### PHP
-```sh
-php server.php
-```
-
 ### Go
 ```sh
 go run server.go
