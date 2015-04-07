@@ -1,4 +1,4 @@
-# First task move "acc-user-name.dust" and "acc-user-name.js" to react
+## First task move "acc-user-name.dust" and "acc-user-name.js" to react
 
 1) how resolve {?firstName}1 {:else}2 {/firstName} ?
 
@@ -6,7 +6,7 @@
 
 3) how resolve if condition ?
 
-## GOOD LUCK!!
+### GOOD LUCK!!
 
 # React Tutorial
 
