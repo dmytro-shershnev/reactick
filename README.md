@@ -10,12 +10,18 @@ http://stackoverflow.com/questions/22538638/how-to-have-conditional-elements-and
 
 http://stackoverflow.com/questions/25224793/reactjs-creating-a-if-component-a-good-idea
 
+
+
+```jsx
 <div>
     {(true
         ? <div>Showing true item</div>     
         : <div>Never showing false item</div>
     )}
 </div>
+
+```
+
 
 
 ### GOOD LUCK!!
