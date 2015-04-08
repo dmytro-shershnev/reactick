@@ -2,20 +2,40 @@ function i18n (key) {
   return 'vaverka_' + key;
 }
 
+function jsxString() {
+    return Array.prototype.join.call(arguments, 'jsx')
+}
+
 var CommentForm = React.createClass({
   render: function() {
-    var firstName = '1asd';
+    var firstName = 'test1';
+    var condition = 'test2';
+    var  lastName= '1';
 
-    return (
-      <div>
-	{i18n (firstName)}
-      
-        <form className="commentForm" onSubmit={this.handleSubmit}>
-          <input type="text" placeholder={i18n (firstName)} ref="author"/>
-          <input type="text" placeholder="Comment text..." ref="text"/>
-          <input type="submit" value="Post"/>
-        </form>
-      </div>
+      var obj = {editable: 13};
+
+    /// acc-user-name.dust
+    return (            <div>
+        <div class="account-settings__value">
+            {(firstName
+            ? jsxString(firstName, lastName)
+            : i18n('ACC0070')
+            )}
+        </div>
+            {(obj.editable
+                ?   <form class="account-settings__edit" data-module-type="FormBlocking">
+                        <input type="hidden" name="birthday" value="{birthday}"/>
+                        <input type="hidden" name="gender" value="{gender}"/>
+                        <input class="account-settings__edit-txt" name="firstName" type="text" data-module-type="TextFieldPlaceholder" placeholder={i18n ('ACC0033')} value={i18n('ACC0033')} data-form-blocking="input"/>
+                        <input class="account-settings__edit-txt" name="firstName" type="text" data-module-type="TextFieldPlaceholder" placeholder={i18n ('ACC0033')} value={firstName} data-form-blocking="input"/>
+                        <input class="account-settings__edit-txt" name="lastName" type="text" data-module-type="TextFieldPlaceholder" placeholder={i18n ('ACC0034')} value={lastName} data-form-blocking="input"/>
+                        <button class="button account-settings__save" data-form-blocking="button" type="submit">{i18n ("ACC0013")}</button>
+                        <button class="button button_color_gray account-settings__cancel" type="button">{i18n ("ACC0015")}</button>
+                    </form>
+                    : <button class="account-settings__edit-btn">{i18n ("ACC0003")}</button>
+
+                    )}
+    </div>
     );
   },
 
