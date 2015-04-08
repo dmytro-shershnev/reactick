@@ -1,22 +1,28 @@
 ## First task: move "acc-user-name.dust" and "acc-user-name.js" to react
 
-
-1) how resolve if condition ?
-
 some solution without {:else}
 
 http://stackoverflow.com/questions/22538638/how-to-have-conditional-elements-and-keep-dry-with-facebook-reacts-jsx
 
 http://stackoverflow.com/questions/25224793/reactjs-creating-a-if-component-a-good-idea
 
-
-
+if-else:
 ```jsx
 <div>
-    {(true
-        ? <div>Showing true item</div>     
-        : <div>Never showing false item</div>
-    )}
+  render: function() {
+    var firstName = 'test1';
+    var condition = 'test2';
+
+    return (
+	  {i18n (firstName)}
+      <div>
+        {(firstName === 'test1' && condition === 'test2'
+            ? <div>Showing true item</div>
+            : <div>Never showing false item</div>
+        )}
+      </div>
+    );
+  }
 </div>
 
 ```
