@@ -1,19 +1,21 @@
 ## First task move "acc-user-name.dust" and "acc-user-name.js" to react
 
-1) how resolve {?firstName}1 {:else}2 {/firstName} ?
+1) how resolve i18n ?
 
-2) how resolve i18n ?
-
-3) how resolve if condition ?
+2) how resolve if condition ?
 
 some solution without {:else}
 
 http://stackoverflow.com/questions/22538638/how-to-have-conditional-elements-and-keep-dry-with-facebook-reacts-jsx
+
 http://stackoverflow.com/questions/25224793/reactjs-creating-a-if-component-a-good-idea
 
-<div id={condition ? 'msg' : ''
-{true && (<div>render item</div>)}
-{false && (<div>don't render item</div>)}
+<div>
+    {(true
+        ? <div>Showing true item</div>     
+        : <div>Never showing false item</div>
+    )}
+</div>
 
 
 ### GOOD LUCK!!
