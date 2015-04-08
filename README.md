@@ -1,4 +1,4 @@
-## First task move "acc-user-name.dust" and "acc-user-name.js" to react
+## First task: move "acc-user-name.dust" and "acc-user-name.js" to react
 
 1) how resolve i18n ?
 
