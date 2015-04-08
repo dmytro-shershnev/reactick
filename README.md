@@ -1,8 +1,7 @@
 ## First task: move "acc-user-name.dust" and "acc-user-name.js" to react
 
-1) how resolve i18n ?
 
-2) how resolve if condition ?
+1) how resolve if condition ?
 
 some solution without {:else}
 

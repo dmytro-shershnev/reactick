@@ -1,8 +1,6 @@
-var i18n = React.createClass({
-  render: function() {
-    return  <span>'i18n' + this.props.key</span>;
-  }
-});
+function i18n (key) {
+  return 'vaverka_' + key;
+}
 
 var CommentForm = React.createClass({
   render: function() {
@@ -10,9 +8,10 @@ var CommentForm = React.createClass({
 
     return (
       <div>
-        <i18n key={firstName}/>
+	{i18n (firstName)}
+      
         <form className="commentForm" onSubmit={this.handleSubmit}>
-          <input type="text" placeholder="<i18n key={firstName}/>" ref="author"/>
+          <input type="text" placeholder={i18n (firstName)} ref="author"/>
           <input type="text" placeholder="Comment text..." ref="text"/>
           <input type="submit" value="Post"/>
         </form>
