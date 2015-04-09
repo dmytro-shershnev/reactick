@@ -8,7 +8,6 @@ http://stackoverflow.com/questions/25224793/reactjs-creating-a-if-component-a-go
 
 if-else:
 ```jsx
-<div>
   render: function() {
     var firstName = 'test1';
     var condition = 'test2';
@@ -23,7 +22,6 @@ if-else:
       </div>
     );
   }
-</div>
 
 ```
 
